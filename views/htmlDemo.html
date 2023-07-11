@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>WEB700</title>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<style>
+			body {
+			  font-family: 'Cambria Math', sans-serif;
+			  margin: 0;
+
+			}
+		
+			.container {
+			  display: flex;
+			}
+		
+			h1 {
+			  font-size: 40px;
+			  margin-bottom: 10px;
+			  color: #333;
+			  text-align: center;
+			}
+		
+			h2 {
+			  font-size: 32px;
+			  margin-bottom: 10px;
+			  color: #333;
+			}
+		
+			p {
+			  font-size: 16px;
+			  margin-bottom: 20px;
+			  color: #777;
+			}
+		  </style>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#">Dhanenjeyan Rajdurai Varatharajan</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+					<li class="nav-item active"><a class="nav-link" href="/htmlDemo">Html Demo</a></li>
+				</ul>
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a class="nav-link" href="/students">Students</a></li>
+					<li class="nav-item"><a class="nav-link" href="/tas">Teaching Assistants</a></li>
+					<li class="nav-item"><a class="nav-link" href="/courses">Courses</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="container">
+			<div class="row">
+				<main class="col-md-12">
+
+					<!-- Start your code here -->
+					<style>
+						table {
+						  border-collapse: collapse;
+						  width: 100%;
+						}
+					  
+						table, th, td {
+						  border: 1px solid black;
+						}
+					  </style>
+					  
+					  <h1>Tables</h1>
+					  <h2>Table 1</h2>
+					  <table>
+						<caption>Table 1</caption>
+						<thead>
+						  <tr>
+							<th>Header 1</th>
+							<th>Header 2</th>
+							<th>Header 3</th>
+						  </tr>
+						</thead>
+						<tbody>
+						  <tr>
+							<td>Data 1</td>
+							<td>Data 2</td>
+							<td>Data 3</td>
+						  </tr>
+						  <tr>
+							<td>Data 4</td>
+							<td>Data 5</td>
+							<td>Data 6</td>
+						  </tr>
+						  <tr>
+							<td>Data 7</td>
+							<td>Data 8</td>
+							<td>Data 9</td>
+						  </tr>
+						</tbody>
+					  </table>
+					  
+					  <table>
+						<h2>Table 2</h2>
+						<caption>Table 2</caption>
+							<thead>
+								<tr>
+								  <th>Header A</th>
+								  <th>Header B</th>
+								  <th>Header C</th>
+								</tr>
+							  </thead>
+						<tbody>
+						  <tr>
+							<td colspan="2">Data A</td>
+							<td>Data B</td>
+						  </tr>
+						  <tr>
+							<td></td>
+							<td>Data C</td>
+							<td rowspan="2">Data D</td>
+						  </tr>
+						  <tr>
+							<td></td>
+							<td>Data E</td>
+						  </tr>
+						</tbody>
+					  </table>
+	  
+				<p>The Tables section presents two HTML tables that illustrate the implementation of essential elements like caption, thead, tbody, tfoot, th, td, and tr.
+				These tables are designed with a minimum of 3 rows and 3 columns and make use of properties such as rowspan and colspan.
+				Within each cell of the tables, you will find diverse content, including images, links, or text.</p>
+			
+					<h1>Lists</h1>
+					<ul>
+					  <li>Entry 1</li>
+					  <li>Entry 2</li>
+					  <li>
+						Entry 3 (with sub-list)
+						<ul>
+						  <li>Sub-Entry 1</li>
+						  <li>Sub-Entry 2</li>
+						  <li>Sub-Entry 3</li>
+						</ul>
+					  </li>
+					  <li>Entry 4</li>
+					  <li>Entry 5</li>
+					</ul>
+			
+					<p>In the Lists section, there is a single list with at least 5 entries. Notably, third entry has a nested list with a different type from the parent list. 
+						Each item in the list may contain a variety of material, such as photos, links, and text.</p>
+			
+					<style>
+							img {
+							  width: 300px; /* Set the desired width */
+							  height: auto; /* Maintain aspect ratio */
+							}
+						  </style>
+					<h1>Images</h1>
+					<img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Snowboarder_in_halfpipe.jpg" alt="Snowboarder" />
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt8Gu_e2Z_cmjPzI96Ain0DuWFbznrx6qWcNfCkEjhBohFp2OtJ9qFcijLI8BBBM4pfPs&usqp=CAU" alt="html 5" />
+					<img src="https://www.freecodecamp.org/news/content/images/2023/04/JavaScript-Blog-Cover.png" alt="jS" />
+					
+					<p>The usage of images in HTML allows web developers to visually enhance their web pages by incorporating graphical elements. 
+					images can be displayed using the 'img' element, providing flexibility in terms of source, size, and alternative text for accessibility purposes.</p>
+			
+					<h1>Audio</h1>
+					<audio controls>
+					  <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2022/web700/A3/sample-audio.mp3" type="audio/mpeg">
+					  <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2022/web700/A3/sample-audio.ogg" type="audio/ogg">
+					  Your browser does not support the audio element.
+					</audio>
+			
+					<p>The 'audio' element in HTML is used to embed audio content, allowing the developer to add audio files to the web page, which helps to play audio files, control playback options and provide a user-friendly interface for interacting with audio content on your website.</p>
+			
+					<h1>Video</h1>
+					<video controls>
+					  <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2022/web700/A3/sample-video.mp4" type="video/mp4">
+					  <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2022/web700/A3/sample-video.ogg" type="video/ogg">
+					  <source src="https://pat-crawford-sdds.netlify.app/shared/fall-2022/web700/A3/sample-video.webm" type="video/webm">
+					  Your browser does not support the video element.
+					</video>
+			
+					<p>The 'video' element in HTML is used to embed video content, allowing the develoer to add video files to the web page. Video element to play video files, control playback options and provide a user-friendly interface for interacting with video content on the website.</p>			
+					<!-- End your code here  -->
+
+
+
+				</main>
+			</div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	</body>
+</html>
