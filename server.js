@@ -15,6 +15,10 @@ var app = express();
 var HTTP_PORT = 8080;
 
 
+const publicPath = path.join(__dirname, 'public');
+app.use(express.static(publicPath));
+
+app.use(express.urlencoded({ extended: true }));
 app.get("/students", (req, res) => {
     const { course} = req.query;
     collegeData.getAllStudents().then(students => {
@@ -62,6 +66,20 @@ app.get("/htmlDemo", (req, res) => {
 app.get("/courses", (req, res) => {
     collegeData.getCourses().then(courses => {
         res.status(200).json(courses);
+    }).catch(err => {
+        res.status(500).send({message:"no results"});
+    })
+});
+
+
+app.get("/students/add", (req, res) => {
+    const filePath = path.join(__dirname, 'views', 'addStudent.html');
+    res.sendFile(filePath)
+});
+
+app.post("/students/add", (req, res) => {
+    collegeData.addStudent(req.body).then(() => {
+        res.redirect('/students');
     }).catch(err => {
         res.status(500).send({message:"no results"});
     })

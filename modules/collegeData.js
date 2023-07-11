@@ -8,6 +8,24 @@ class Data {
 }
 dataCollection = null;
 
+function addStudent(studentData) {
+  return new Promise((resolve, reject) => {
+    if (dataCollection && dataCollection.students) {
+      dataCollection.students = [
+        ...dataCollection.students,
+        {
+          ...studentData,
+          studentNum: dataCollection.students.length + 1,
+          TA: studentData.TA ? true : false,
+          course: Number(studentData.course),
+        },
+      ];
+      resolve();
+    }
+    reject();
+  });
+}
+
 function readFilePromise(path) {
   return new Promise((resolve, reject) => {
     fs.readFile(path, 'utf8', (err, dataFromFile) => {
@@ -74,5 +92,5 @@ function getCourses() {
 }
 
 module.exports = {
-    initialize, getAllStudents, getTAs, getCourses
+    initialize, getAllStudents, getTAs, getCourses, addStudent
 }

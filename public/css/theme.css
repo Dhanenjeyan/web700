@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik&display=swap');
+
+.navbar.bg-light {
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-light .navbar-brand {
+    font-family: 'Rubik', sans-serif;
+    color: #ef6c00 !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-nav .nav-link {
+    font-family: 'Pacifico', sans-serif;
+    color: #333;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #0277bd !important;
+}
+
+body {
+    background-image: linear-gradient(45deg,
+            hsl(0deg 0% 100%) 0%,
+            hsl(51deg 100% 97%) 11%,
+            hsl(51deg 100% 94%) 22%,
+            hsl(51deg 100% 91%) 33%,
+            hsl(52deg 100% 87%) 44%,
+            hsl(52deg 100% 83%) 56%,
+            hsl(52deg 100% 79%) 67%,
+            hsl(53deg 100% 74%) 78%,
+            hsl(53deg 100% 67%) 89%,
+            hsl(55deg 100% 50%) 100%);
+    min-height: 100vh;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+table tr:nth-child(odd) td {
+    background-color: #f0f0f0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Rubik', sans-serif;
+    color: #004d40;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+a {
+    color: #333;
+}
+
+a:hover {
+    color: #ff0000;
+}
+
+legend {
+    padding: 10px 0;
+    font-family: 'Rubik', sans-serif;
+    color: #3e2723;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
